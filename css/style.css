@@ -13,7 +13,7 @@
 }
 
 body{
-	background-color: skyblue;
+	background-color: rgb(177, 233, 255);
 	font-family: 'Nerko One', cursive;
 }
 
@@ -21,18 +21,58 @@ body{
 
 header .title{
 	text-transform: uppercase;
-	padding-top: 0px;
-	color: #fff;
-	text-shadow: 2px 0 0 grey;
+	padding-top: 20px;
+	text-shadow: 2px 0 0 rgb(109, 109, 109);
+	color: white;
 	font-size: 45px;
 }
 
 /* MAIN */
 
+main{
+	text-shadow: 1px 0 0 rgb(145, 145, 145);
+}
+
+/* T-SETTINGS */
+
+.text{
+	position: absolute;
+	font-size: 32px;
+	color: rgb(214, 64, 228);
+	bottom: 7px;
+	left: 15%;
+	display: none;
+}
+
+.text-v{
+	position: absolute;
+	font-size: 32px;
+	color: rgb(214, 64, 228);
+	bottom: 7px;
+	left: 15%;
+}
+
+.cardback:hover .text,
+.cardback:hover .text-v{
+	display: block;
+	color: coral;
+}
+
+/* L-SETTINGS */
+
+.cardback:hover .baloon,
+.cardback:hover .bicycle,
+.cardback:hover .cruise,
+.cardback:hover .submarine,
+.cardback:hover .tractor,
+.cardback:hover .tram{
+	display: block;
+}
+
 .row .cardback{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/pattern.png);
 	background-size: contain;
@@ -40,29 +80,32 @@ header .title{
 	cursor: pointer;
 	margin-right: 20px;
 	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 3px 3px rgba(0, 0, 0, 5%);
 	position: relative;
 	z-index: 1;
 }
 
-.text{
-	position: absolute;
-	font-size: 33px;
-	color: coral;
-	bottom: 10px;
-	left: 15%;
+.row .baloon{
+	height: 230px;
+	width: 190px;
+	border:1px solid rgb(145, 145, 145);
+	border-radius: 10px;
+	background-image: url(../img/noun_air_balloon_3134741.png);
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: 1px 1px rgb(145, 145, 145);
+	position: relative;
+	background-color: white;
 	display: none;
 }
 
-.cardback:hover .text{
-	display: block;
-	color: rgb(214, 64, 228);
-}
-
-.row .baloon{
+.row .baloon-v{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/noun_air_balloon_3134741.png);
 	background-position: center;
@@ -70,28 +113,7 @@ header .title{
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
-	position: relative;
-	background-color: white;
-	z-index: 10;
-}
-
-.row .baloon{
-	height: 230px;
-	width: 190px;
-	border:1px solid grey;
-	border-radius: 10px;
-	background-image: url(../img/noun_air_balloon_3134741.png);
-	background-position: center;
-	background-size: 80%;
-	background-repeat: no-repeat;
-	display: inline-block;
-	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 3px 3px rgba(0, 0, 0, 5%);
 	position: relative;
 	background-color: white;
 }
@@ -99,7 +121,7 @@ header .title{
 .row .bicycle{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/noun_Bicycle_3134821.png);
 	background-position: center;
@@ -107,17 +129,16 @@ header .title{
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 1px 1px rgb(145, 145, 145);
 	position: relative;
 	background-color: white;
+	display: none;
 }
 
 .row .cruise{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/noun_Cruise_Ship_3134824.png);
 	background-position: center;
@@ -125,17 +146,16 @@ header .title{
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 1px 1px rgb(145, 145, 145);
 	position: relative;
 	background-color: white;
+	display: none;
 }
 
 .row .tractor{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/noun_Tractor_3134797.png);
 	background-position: center;
@@ -143,17 +163,16 @@ header .title{
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 1px 1px rgb(145, 145, 145);
 	position: relative;
 	background-color: white;
+	display: none;
 }
 
 .row .submarine{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/noun_Submarine_3134738.png);
 	background-position: center;
@@ -161,17 +180,16 @@ header .title{
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 1px 1px rgb(145, 145, 145);
 	position: relative;
 	background-color: white;
+	display: none;
 }
 
 .row .tram{
 	height: 230px;
 	width: 190px;
-	border:1px solid grey;
+	border:1px solid rgb(145, 145, 145);
 	border-radius: 10px;
 	background-image: url(../img/noun_Tram_3134750.png);
 	background-position: center;
@@ -179,11 +197,10 @@ header .title{
 	background-repeat: no-repeat;
 	display: inline-block;
 	cursor: pointer;
-	margin-right: 20px;
-	margin-top: 30px;
-	box-shadow: 1px 0 0 grey;
+	box-shadow: 1px 1px rgb(145, 145, 145);
 	position: relative;
 	background-color: white;
+	display: none;
 }
 
 /* FOOTER */
